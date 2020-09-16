@@ -6,7 +6,10 @@ public class ExemploIO {
 
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in); //usando uma classe de terceiros
+		// Scanner é uma classe
+		// input é um objeto
+		// new comando de instanciação --> comando para instanciar objeto
 		
 		String nome;
 		float peso;
@@ -48,6 +51,7 @@ public class ExemploIO {
 		}
 		
 		System.out.println("Está gostando? "+ estaLegal);
+		
 		
 	}
 	
