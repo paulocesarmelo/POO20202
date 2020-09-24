@@ -2,13 +2,25 @@ package aula4;
 
 public class Pessoa {
 
+	static int  id = 0;
 	String nome, cpf;
 	int idade;
 	Endereco endResidencial = new Endereco();
 	//...
 	
 	public Pessoa() {
-		System.out.println("Criando objeto pessoa...");
+		
+		id++;
+		
+		System.out.println("Criando objeto pessoa com id: "+id);
+	}
+	
+	public void alterarId(int i) {
+		id = i;
+	}
+	
+	public void imprimirID() {
+		System.out.println("Id: "+id);
 	}
 	
 	public void alterarNome(String nome) {
@@ -46,6 +58,8 @@ public class Pessoa {
 		//System.out.println("Endereço: "+endResidencial);
 		this.endResidencial.imprimirDados();
 	}
+	
+	
 	
 	
 }
